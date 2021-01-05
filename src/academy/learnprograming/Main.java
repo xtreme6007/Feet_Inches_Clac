@@ -6,9 +6,11 @@ public class Main {
 	// write your code here
     }
 
-    public static int clacFeetAndInchesToCentimeters(int feet, int inches){
+    public static double clacFeetAndInchesToCentimeters(int feet, int inches){
         if(feet >= 0 && inches >= 0){
-
+            double CentFt = feet * 30.48;
+            double CentIn = inches * 2.54;
+            return (double)(CentFt + CentIn);
         }
 
 
